@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Apresentação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            /*faz com que o conteudo nao fique atras da navbar*/
+            padding-top: 56px;
+        }
+
+        section {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+
+        .text-orange {
+            /*cor para o icone do html*/
+            color: #fd7e14;
+        }
+
+        .text-purple {
+            /*cor para o icone do bootstrap*/
+            color: #6f42c1;
+        }
+
+        .bg-gray {
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gray fixed-top">
+        <!--Aqui sera a barra de navegacao com links que vao para partes especificas do portfolio -->
+        <div class="container">
+            <a class="navbar-brand" href="#">Meu Portfólio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre-mim">Sobre mim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projetos">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="sobre-mim" class="bg-dark text-white"><!--A primeira section sera para falar um pouco sobre mim-->
+        <div class="container">
+            <h2 class="text-center mb-5 display-4">Sobre Mim</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <div class="text-center p-3">
+                        <img src="foto_portfolio.jpg" class="img-fluid rounded-circle" alt="Foto do Perfil">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <p class="lead">
+                    <p>Olá! Sou <strong>Kayky Sousa</strong>, um desenvolvedor front-end em formação, com foco em
+                        transformar ideias criativas em código funcional e atraente.</p>
+                    <p>Minha especialidade inclui <strong>HTML5</strong>, <strong>CSS3</strong> (com ênfase em layouts
+                        responsivos e modernos), <strong>JavaScript</strong> (para criar interfaces interativas e
+                        dinâmicas) e <strong>Bootstrap</strong> (para agilizar o desenvolvimento e criar protótipos
+                        eficientes).</p>
+                    <p>Este portfólio é uma demonstração da minha habilidade em criar soluções mobile-first e interfaces
+                        responsivas, seguindo as melhores práticas e padrões do mercado, com foco em usabilidade e
+                        experiência do usuário.</p>
+                    <p class="lead display-2">
+                        <img height=100 width=80
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg" />
+
+                        <img height=100 width=80
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain-wordmark.svg" />
+                        <img height=100 width=80
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" />
+
+                        <img height=100 width=80
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" />
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="bg-dark text-white">
+        <!--Aqui irei apresentar os projetos desenvolvidos em aula e falar um pouco sobre cada um deles-->
+        <div class="container">
+            <h2 class="text-center mb-5 display-4">Meus Projetos</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card h-100 shadow-lg bg-dark text-white">
+                        <img src="img/batalhanaval.PNG" class="card-img-top" alt="Projeto batalhanaval">
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto 1: Batalha Naval</h5>
+                            <p class="card-text">Este projeto consiste na criação de uma versão completa e funcional do
+                                clássico jogo Batalha Naval, desenvolvida para rodar no ambiente de terminal Node.js. O
+                                projeto foca em lógica de programação pura e manipulação de dados em memória.</p>
+                            <p class="card-text">Tecnologias Utilizadas JavaScript, Lógica de Matrizes.</p>
+                            <a href="https://github.com/Kaykysousa1/projeto-batalhanaval.git" target="_blank"
+                                class="btn btn-success">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm bg-dark text-white">
+                        <img src="" class="card-img-top" alt="Projeto cafeteria">
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto 2: cafeteria</h5>
+                            <p class="card-text">
+                            <p>Este projeto é uma landing page para a cafeteria,
+                                desenvolvida com foco em criar uma experiência de usuário atraente e intuitiva. O
+                                objetivo foi apresentar os produtos e serviços da cafeteria de forma clara e acessível,
+                                além de fornecer informações sobre localização e horários de funcionamento.</p>
+                            <p>Tecnologias Utilizadas: HTML5, CSS3, JavaScript</p>.</p>
+                            <a href="https://github.com/Kaykysousa1/projetocafeteria.git" target="_blank"
+                                class="btn btn-success">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm bg-dark text-white">
+                        <img src="" class="card-img-top" alt="Projeto ferramenta de qualidade">
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto 3: ferramenta de qualidade"</h5>
+                            <p class="card-text">
+                            <p>Este projeto é um blog de fitness, desenvolvido para compartilhar dicas e informações
+                                sobre saúde e bem-estar. O objetivo foi criar uma plataforma atraente e fácil de
+                                navegar, com conteúdo relevante e atualizado regularmente, utilizando ferramentas de
+                                qualidade para garantir a melhor experiência do usuário.</p>
+                            <p>Tecnologias Utilizadas: HTML5, CSS3, JavaScript, Bootstrap, Font Awesome, Google Fonts
+                            </p>
+                            <a href="https://github.com/Kaykysousa1/SistemaQualidadeProdutividade.git" target="_blank"
+                                class="btn btn-success">Ver
+                                Projeto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm bg-dark text-white">
+                        <img src="img/blog.PNG" class="card-img-top" alt="Projeto blog">
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto 4: Blog</h5>
+                            <p class="card-text">
+                            <p>Este projeto é um blog de fitness, desenvolvido para compartilhar dicas e informações
+                                sobre saúde e bem-estar. O objetivo foi criar uma plataforma atraente e fácil de
+                                navegar, com conteúdo relevante e atualizado regularmente.</p>
+                            <p>Tecnologias Utilizadas: HTML5, CSS3, JavaScript</p>
+                            <a href="https://github.com/Kaykysousa1/blog.git/" target="_blank"
+                                class="btn btn-success">Ver
+                                Projeto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="bg-dark text-white">
+        <!--Aqui sera a aba de contato, onde sera preenchido um formulario-->
+        <div class="container">
+            <h2 class="text-center mb-5 display-4">Entre em Contato</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 ">
+                    <form>
+                        <div class="mb-3 text-white">
+                            <label for="nome" class="form-label">Nome:</label>
+                            <input type="text" class="form-control" id="nome" required>
+                        </div>
+                        <div class="mb-3 text-white">
+                            <label for="email" class="form-label">E-mail:</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3 text-white">
+                            <label for="mensagem" class="form-label">Mensagem:</label>
+                            <textarea class="form-control" id="mensagem" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success btn-ls w-100">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-white text-center py-3 bg-gray">
+        <!--Footer simples com o copy o nome da atividade e Senai-RS 2025-->
+        <p class="mb-0">&copy; 2025 Meu Portfólio Pessoal Desenvolvido com Bootstrap. SENAI-RS</p>
+        <div class="d-flex justify-content-center pt-2">
+            <a href="https://github.com/Kaykysousa1" target="_blank" class="text-white mx-2 fs-4">
+                <i class="bi bi-github"></i>
+            </a>
+            <a href="usuario" target="_blank" class="text-white mx-2 fs-4">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/Kayky_m_sousa/" target="_blank" class="text-white mx-2 fs-4">
+                <i class="bi bi-instagram"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
